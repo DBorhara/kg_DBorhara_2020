@@ -22,3 +22,35 @@ graded)
 4. Commit messages should be descriptive to reflect the changes as accurately as
 possible.
 5. The final version of your solution must be on the master branch
+
+### *Example Cases*
+
+**s1:** 'a  b  c'
+
+**s2:** 'b  c  d'
+
+**Output:** true
+
+**s1:** 'f  o  o'
+
+**s2:** 'b  a  r'
+
+**Output:** false
+
+**s1:** 'b  a  r'
+
+**s2:** 'f  o  o'
+
+**Output:** true
+
+## ValidMap Psuedocode
+
+1. Create function that takes 2 arguments
+2. Check if both strings are equal length, if not return false
+3. Create a hashmap
+4. Loop through s1
+5. Take each element and
+   1. if it exists as a key return false
+   2. if it does not exist as a key provide the s2 equivalent at the same index
+6. If it completes return true
+
